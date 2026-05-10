@@ -1,5 +1,5 @@
 ---
-title: Hello, World
+title: "#1 mamba"
 date: 2026-05-11
 authors: [createcentury]
 tags: []

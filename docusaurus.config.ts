@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: '#1 mamba',
+  title: 'createcentury',
   tagline: '',
   favicon: 'img/favicon.ico',
 
@@ -38,7 +38,7 @@ const config: Config = {
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
-          blogTitle: '#1 mamba',
+          blogTitle: 'createcentury',
           blogDescription: 'Personal blog by createcentury',
           postsPerPage: 10,
           feedOptions: {
@@ -64,7 +64,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: '#1 mamba',
+      title: 'createcentury',
       logo: {
         alt: 'createcentury',
         src: 'img/logo.svg',
