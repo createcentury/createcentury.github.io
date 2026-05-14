@@ -34,7 +34,11 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
+          sidebarPath: './sidebars.ts',
+        },
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
@@ -54,6 +58,20 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en', 'ja'],
+        indexBlog: true,
+        indexDocs: false,
+        indexPages: false,
+        blogRouteBasePath: '/',
+      },
     ],
   ],
 

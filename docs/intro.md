@@ -1,0 +1,6 @@
+---
+slug: /
+title: About
+---
+
+createcenturyのブログです。
