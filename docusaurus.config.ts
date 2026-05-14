@@ -52,7 +52,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
         },
         blog: {
-          routeBasePath: '/',
+          routeBasePath: 'blog',
           showReadingTime: true,
           blogTitle: 'createcentury',
           blogDescription: 'Personal blog by createcentury',
@@ -75,6 +75,17 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {from: '/', to: '/blog'},
+        ],
+      },
+    ],
+  ],
+
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -84,7 +95,7 @@ const config: Config = {
         indexBlog: true,
         indexDocs: false,
         indexPages: false,
-        blogRouteBasePath: '/',
+        blogRouteBasePath: 'blog',
       },
     ],
   ],
@@ -100,9 +111,10 @@ const config: Config = {
       logo: {
         alt: 'createcentury',
         src: 'img/logo.svg',
+        href: '/blog',
       },
       items: [
-        {to: '/', label: 'Blog', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/createcentury',
           label: 'GitHub',

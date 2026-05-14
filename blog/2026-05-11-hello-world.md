@@ -1,5 +1,6 @@
 ---
 title: "#1 mamba"
+slug: 1
 date: 2026-05-11
 authors: [createcentury]
 tags: []
