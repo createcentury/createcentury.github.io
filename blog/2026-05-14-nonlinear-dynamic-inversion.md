@@ -10,10 +10,6 @@ Nonlinear Dynamic Inversion (NDI) について。
 
 {/* truncate */}
 
-書いていきます。
-
----
-
 ## 参考文献
 
 - "[Nonlinear Dynamic Inversion](https://www.aerostudents.com/courses/advanced-flight-control/nonlinearDynamicInversion.pdf)" Advanced Flight Control course notes, Aerostudents.
