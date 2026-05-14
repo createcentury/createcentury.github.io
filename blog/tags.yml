@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+health:
+  label: Health
+  permalink: /health
+  description: 健康・体調管理に関する記事
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+nutrition:
+  label: Nutrition
+  permalink: /nutrition
+  description: 栄養素に関する記事
