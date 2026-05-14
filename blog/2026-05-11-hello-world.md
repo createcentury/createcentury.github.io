@@ -5,13 +5,7 @@ authors: [createcentury]
 tags: []
 ---
 
-ブログを始めました。
-
 {/* truncate */}
-
-書いていきます。
-
----
 
 ## 参考文献
 
