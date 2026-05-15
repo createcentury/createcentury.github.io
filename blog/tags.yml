@@ -7,3 +7,23 @@ nutrition:
   label: Nutrition
   permalink: /nutrition
   description: 栄養素に関する記事
+
+ml:
+  label: Machine Learning
+  permalink: /ml
+  description: 機械学習・深層学習
+
+ssm:
+  label: SSM
+  permalink: /ssm
+  description: State Space Models
+
+cuda:
+  label: CUDA
+  permalink: /cuda
+  description: CUDA・GPU カーネル
+
+metal:
+  label: Metal
+  permalink: /metal
+  description: Apple Metal / Metal Shading Language
