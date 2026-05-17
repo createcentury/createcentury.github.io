@@ -1,6 +1,6 @@
 ---
-title: "#2 成人男性が1日に必要な栄養素"
-slug: 2
+title: "#1 成人男性が1日に必要な栄養素"
+slug: 1
 date: 2026-05-14T10:00:00+09:00
 authors: [createcentury]
 tags: [health, nutrition]

@@ -84,6 +84,27 @@ const config: Config = {
         ],
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'personal',
+        routeBasePath: 'personal',
+        path: './personal',
+        blogTitle: 'Personal',
+        blogDescription: 'Personal notes (日本語)',
+        showReadingTime: true,
+        postsPerPage: 10,
+        feedOptions: {
+          type: ['rss', 'atom'],
+          xslt: true,
+        },
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+        onInlineTags: 'warn',
+        onInlineAuthors: 'warn',
+        onUntruncatedBlogPosts: 'ignore',
+      },
+    ],
   ],
 
   themes: [
@@ -115,6 +136,7 @@ const config: Config = {
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/personal', label: 'Personal', position: 'left'},
         {
           href: 'https://github.com/createcentury',
           label: 'GitHub',
