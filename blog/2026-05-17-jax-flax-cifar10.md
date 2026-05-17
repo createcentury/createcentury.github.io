@@ -1,80 +1,80 @@
 ---
-title: "#4 JAX + Flax + Optax で CIFAR-10 を CNN で学習する"
+title: "#4 Training a CNN on CIFAR-10 with JAX + Flax + Optax"
 slug: 4
 date: 2026-05-17T08:00:00+09:00
 authors: [createcentury]
 tags: [ml]
 ---
 
-JAX / Flax / Optax の 3 点セットで CIFAR-10 を CNN で訓練するハンズオン。pure-functional な書き方、Optax の合成、`jit` した訓練ループ、訓練曲線まで。
+A hands-on with JAX / Flax / Optax — training a small CNN on CIFAR-10. Covers the pure-functional style, Optax composition, a `jit`-ed training loop, and the training curves.
 
 {/* truncate */}
 
-:::note 作成中
-本記事は執筆中。コード・数値・プロットは順次差し替え。
+:::note Work in progress
+This post is being written. Code, numbers and plots will be filled in as they're produced.
 :::
 
-## なぜ JAX / Flax / Optax
+## Why JAX / Flax / Optax
 
-- **JAX**：NumPy + 自動微分 + `jit` / `vmap` / `pmap` の合成可能な変換系。pure-functional で副作用を明示
-- **Flax**：JAX 上の neural network library。Module を**関数 + パラメータ**として扱う設計
-- **Optax**：optimizer ライブラリ。`chain` / `apply_updates` で組合せが綺麗
+- **JAX**: NumPy + autodiff + composable transforms (`jit` / `vmap` / `pmap`). Pure-functional — side effects are explicit.
+- **Flax**: neural-network library on top of JAX. Modules are **function + parameters**, kept separate.
+- **Optax**: optimiser library. `chain` / `apply_updates` compose cleanly.
 
-PyTorch の `nn.Module` ＋ `Optimizer.step()` パターンと対比すると、JAX 系は「**訓練ループを自分で書きやすい**」のが強み。
+Compared to PyTorch's `nn.Module` + `Optimizer.step()`, the JAX stack makes the **training loop trivial to write by hand** — there's nothing hidden.
 
-## 環境
+## Environment
 
-- Python 3.12 (uv 管理)
+- Python 3.12 (managed by `uv`)
 - `jax`, `flax`, `optax`, `tensorflow-datasets`, `matplotlib`
-- ハードウェア：M4 Max (M4 GPU を Metal バックエンド で使う場合は `jax-metal` も)
+- Hardware: M4 Max (and `jax-metal` if running the GPU backend on Apple Silicon)
 
 ```bash
 uv venv && source .venv/bin/activate
 pip install jax flax optax tensorflow-datasets matplotlib
 ```
 
-## データセット
+## Dataset
 
-CIFAR-10：32×32×3 のカラー画像、10 クラス（airplane / automobile / bird / …）、訓練 50,000、テスト 10,000。
+CIFAR-10: 32×32×3 colour images, 10 classes (airplane / automobile / bird / …), 50,000 train / 10,000 test.
 
-TODO: 数枚サンプル可視化
+TODO: a few sample images.
 
-## モデル
+## Model
 
-3〜4 段の Conv + BatchNorm + ReLU + GlobalAveragePool + Linear の小さな CNN。
-
-```python
-# TODO: Flax で書いた Module をここに
-```
-
-## Optax で optimizer を組む
+A small CNN — 3–4 stages of Conv + BatchNorm + ReLU, then GlobalAveragePool + Linear.
 
 ```python
-# TODO: optax.chain(clip + adam(lr)) や cosine schedule の例
+# TODO: the Flax Module
 ```
 
-## 訓練ループ
+## Optimiser via Optax
 
 ```python
-# TODO: jit した train_step、loss / acc 集計
+# TODO: optax.chain(clip + adam(lr)) with a cosine schedule
 ```
 
-## 結果
+## Training loop
 
-TODO: 訓練曲線、test accuracy
+```python
+# TODO: jit-compiled train_step, loss / accuracy accumulation
+```
 
-## 振り返り
+## Results
 
-TODO
+TODO: training curves, test accuracy.
+
+## Reflection
+
+TODO.
 
 ---
 
-## 参考文献
+## References
 
-- [JAX 公式ドキュメント](https://docs.jax.dev/)
-- [Flax 公式ドキュメント](https://flax.readthedocs.io/)
-- [Optax 公式ドキュメント](https://optax.readthedocs.io/)
+- [JAX docs](https://docs.jax.dev/)
+- [Flax docs](https://flax.readthedocs.io/)
+- [Optax docs](https://optax.readthedocs.io/)
 
 ---
 
-*作成日: 2026-05-17 / 最終更新日: 2026-05-17*
+*Created: 2026-05-17 / Updated: 2026-05-18*
