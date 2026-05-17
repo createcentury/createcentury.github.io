@@ -37,3 +37,18 @@ oauth:
   label: OAuth
   permalink: /oauth
   description: OAuth 2.0 / OpenID Connect
+
+ai-agents:
+  label: AI Agents
+  permalink: /ai-agents
+  description: LLM ベースのエージェント設計・運用
+
+testing:
+  label: Testing
+  permalink: /testing
+  description: テスト・評価・CI
+
+observability:
+  label: Observability
+  permalink: /observability
+  description: トレース・モニタリング・ログ
