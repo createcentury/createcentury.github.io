@@ -17,3 +17,23 @@ metal:
   label: Metal
   permalink: /metal
   description: Apple Metal / Metal Shading Language
+
+moe:
+  label: MoE
+  permalink: /moe
+  description: Mixture of Experts
+
+jax:
+  label: JAX
+  permalink: /jax
+  description: JAX / Flax / Optax
+
+auth:
+  label: Auth
+  permalink: /auth
+  description: 認証・認可
+
+oauth:
+  label: OAuth
+  permalink: /oauth
+  description: OAuth 2.0 / OpenID Connect
