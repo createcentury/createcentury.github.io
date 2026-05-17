@@ -81,10 +81,6 @@ const config: Config = {
       {
         redirects: [
           {from: '/', to: '/blog'},
-          // Preserve old URLs after renumbering on 2026-05-17.
-          {from: '/blog/3', to: '/blog/2'},
-          {from: '/blog/4', to: '/blog/3'},
-          {from: '/blog/5', to: '/blog/4'},
         ],
       },
     ],
