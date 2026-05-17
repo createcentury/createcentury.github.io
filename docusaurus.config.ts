@@ -77,14 +77,6 @@ const config: Config = {
 
   plugins: [
     [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {from: '/', to: '/blog'},
-        ],
-      },
-    ],
-    [
       '@docusaurus/plugin-content-blog',
       {
         id: 'personal',
@@ -132,9 +124,10 @@ const config: Config = {
       logo: {
         alt: 'createcentury',
         src: 'img/logo.svg',
-        href: '/blog',
+        href: '/',
       },
       items: [
+        {to: '/', label: 'Home', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/personal', label: 'Personal', position: 'left'},
         {
