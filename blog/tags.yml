@@ -52,3 +52,8 @@ observability:
   label: Observability
   permalink: /observability
   description: トレース・モニタリング・ログ
+
+vision:
+  label: Vision
+  permalink: /vision
+  description: 画像認識・Vision モデル
