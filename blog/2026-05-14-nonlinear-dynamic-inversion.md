@@ -1,6 +1,6 @@
 ---
-title: "#3 nonlinear dynamic inversion"
-slug: 3
+title: "#2 nonlinear dynamic inversion"
+slug: 2
 date: 2026-05-14T11:00:00+09:00
 authors: [createcentury]
 tags: []

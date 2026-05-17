@@ -1,6 +1,6 @@
 ---
-title: "#4 mamba-metal: Apple Silicon で Mamba を動かす"
-slug: 4
+title: "#3 mamba-metal: Apple Silicon で Mamba を動かす"
+slug: 3
 date: 2026-05-16
 authors: [createcentury]
 tags: [ml, ssm, cuda, metal]

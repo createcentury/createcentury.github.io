@@ -1,6 +1,6 @@
 ---
-title: "#5 JAX + Flax + Optax で CIFAR-10 を CNN で学習する"
-slug: 5
+title: "#4 JAX + Flax + Optax で CIFAR-10 を CNN で学習する"
+slug: 4
 date: 2026-05-17T08:00:00+09:00
 authors: [createcentury]
 tags: [ml]
