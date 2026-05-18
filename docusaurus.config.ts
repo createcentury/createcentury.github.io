@@ -56,6 +56,8 @@ const config: Config = {
           showReadingTime: true,
           blogTitle: 'createcentury',
           blogDescription: 'Personal blog by createcentury',
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All posts',
           postsPerPage: 10,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -85,6 +87,8 @@ const config: Config = {
         blogTitle: 'Personal',
         blogDescription: 'Personal notes (日本語)',
         showReadingTime: true,
+        blogSidebarCount: 'ALL',
+        blogSidebarTitle: 'All posts',
         postsPerPage: 10,
         feedOptions: {
           type: ['rss', 'atom'],
